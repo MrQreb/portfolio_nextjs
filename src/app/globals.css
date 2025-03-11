@@ -4,7 +4,20 @@
 
 @custom-variant dark (&:is(.dark *));
 
+
 @theme inline {
+  --color-shark-50: #f6f5f5;
+  --color-shark-100: #e7e6e6;
+  --color-shark-200: #d1d0d0;
+  --color-shark-300: #b1afb0;
+  --color-shark-400: #8a8686;
+  --color-shark-500: #6f6b6b;
+  --color-shark-600: #5e5c5d;
+  --color-shark-700: #504e4f;
+  --color-shark-800: #464444;
+  --color-shark-900: #3d3c3c;
+  --color-shark-950: #252424;
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
