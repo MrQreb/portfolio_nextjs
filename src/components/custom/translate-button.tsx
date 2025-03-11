@@ -24,6 +24,7 @@ import {
 import { useMediaQuery } from "../hooks/use-media-query"
 import { Languages } from "lucide-react"
 import { useEffect } from 'react';
+import { useRouter } from "@/i18n/navegation"
 
 type Status = {
   value: string
@@ -32,24 +33,27 @@ type Status = {
 
 const statuses: Status[] = [
   {
-    value: "En",
+    value: "en",
     label: "English",
   },
   {
-    value: "Es",
+    value: "es",
     label: "Espanish",
   },
 ]
 
 
 export function TranslateButton() {
+  const router =  useRouter();
   const [open, setOpen] = React.useState(false)
   const isDesktop = useMediaQuery("(min-width: 768px)")
   const [selectedStatus, setSelectedStatus] = React.useState<Status | null>(
     null
   )
   useEffect(() => {
-    console.log(selectedStatus)
+    if (selectedStatus?.value) {
+      router.push(selectedStatus.value)
+    }
   }, [selectedStatus])
   
 
@@ -58,7 +62,7 @@ export function TranslateButton() {
       <Popover open={open} onOpenChange={setOpen}>
         <PopoverTrigger asChild>
           <button className="m-auto">
-            {selectedStatus ? <>{<Languages className="size-4 md:size-8 m-auto cursor-pointer hover:scale-125 transition-all" />}</> : <Languages className="size-4 md:size-8 m-auto cursor-pointer hover:scale-125 transition-all" />}
+            {selectedStatus?.label ? <>{<Languages className="size-4 md:size-8 m-auto cursor-pointer hover:scale-125 transition-all" />}</> : <Languages className="size-4 md:size-8 m-auto cursor-pointer hover:scale-125 transition-all" />}
           </button>
         </PopoverTrigger>
         <PopoverContent className="w-[200px] p-0" align="start">
@@ -72,7 +76,7 @@ export function TranslateButton() {
     <Drawer open={open} onOpenChange={setOpen}>
       <DrawerTrigger asChild>
         <button className="m-auto">
-          {selectedStatus ? <>{<Languages className="size-4 md:size-8 m-auto cursor-pointer hover:scale-125 transition-all" />}</> : <Languages className="size-4 md:size-8 m-auto cursor-pointer hover:scale-125 transition-all" />}
+          {selectedStatus?.label ? <>{<Languages className="size-4 md:size-8 m-auto cursor-pointer hover:scale-125 transition-all" />}</> : <Languages className="size-4 md:size-8 m-auto cursor-pointer hover:scale-125 transition-all" />}
         </button>
       </DrawerTrigger>
       <DrawerContent>
