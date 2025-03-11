@@ -21,7 +21,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover"
-import { useMediaQuery } from "../hooks/use-media-query"
+import { useMediaQuery } from "../../hooks/use-media-query"
 import { Languages } from "lucide-react"
 import { useEffect } from 'react';
 import { useRouter } from "@/i18n/navegation"

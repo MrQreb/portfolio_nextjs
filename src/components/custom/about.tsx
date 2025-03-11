@@ -5,7 +5,6 @@ import { useLocale } from 'next-intl';
 const About = () => {
 
     const locale = useLocale();
-
     const handleDowloadPdf = () => {
         let fileUrl = '';
         if (locale === 'en') fileUrl = '/english_cv.pdf';
