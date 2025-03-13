@@ -1,9 +1,6 @@
 import { Github } from "@/helpers/svgs";
 import { Link } from "@/i18n/navegation";
 
-
-
-
 interface ProjectContainerProps {
     image: React.ReactNode;
     title:string;
@@ -27,7 +24,7 @@ const ProjectContainer = ({
     return (
         <>
         
-            <p className='m-auto text-center mt-8 text-xl lg:text-2xl font-semibold'>{title}</p>
+            <p className='m-auto text-center mt-8 text-xl lg:text-3xl font-semibold font-inter'>{title}</p>
 
             <div className="mt-8 w-[90%] md:w-[80%] h-[550px] md:h-[400px] rounded-xl bg-[#252424] m-auto grid grid-rows-[50%_30%_20%]
                         md:grid-cols-[30%_70%] md:grid-rows-[10%_60%_30%] relative">
@@ -36,7 +33,7 @@ const ProjectContainer = ({
                 </div>
 
                 <div className="m-auto w-[90%] text-justify mb-12 h-28 md:col-start-2 md:col-end-3 md:row-start-2">
-                    <p className="md:text-xl">{text}</p>
+                    <p className="md:text-xl font-jetbrains">{text}</p>
                 </div>
                 <div className="bg-[#3D3C3C] w-[70%] m-auto rounded-2xl h-[60px] md:h-[75px] flex justify-center gap-4 md:row-start-3 md:col-start-2 mt-4">
                     {Object.values(technologies).map((Component: React.ElementType, index: number) => (

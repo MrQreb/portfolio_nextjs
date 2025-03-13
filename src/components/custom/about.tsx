@@ -27,14 +27,13 @@ const About = () => {
                 />
             </div>
             <div className='w-[90%] mt-4 m-auto'>
-                <p className='m-auto text-center md:mt-12 font-bold text-xl md:text-3xl'>I&apos;m Jesús Eduardo Arias Diaz</p>
+                <p className='m-auto text-center md:mt-12 font-bold text-xl md:text-3xl typewriter-text font-inter'>I&apos;m Jesús Eduardo Arias Diaz</p>
             </div>
             <div className='w-[90%] mt-6 m-auto md:col-start-2 md:col-end-4'>
-                <p className='font-semibold md:text-2xl'>Lorem ipsum dolor sit amet consectnda voluptas facilis doloribus, dolor, commodi tempore laborum?</p>
+                <p className='font-semibold md:text-2xl font-jetbrains'>Lorem ipsum dolor sit amet consectnda voluptas facilis doloribus, dolor, commodi tempore laborum?</p>
             </div>
             <div className='flex justify-center items-center gap-12 md:col-start-1 md:col-end-5 md:row-start-4 md:row-end-4'>
-                <Button onClick={handleDowloadPdf} className='w-28 bg-black text-white font-bold hover:bg-gray-900 hover:scale-110 transition-all cursor-pointer'>CV</Button>
-                <Button className='w-28 bg-black text-white font-bold hover:bg-gray-900 hover:scale-110 transition-all cursor-pointer'>Projects</Button>
+                <Button onClick={handleDowloadPdf} className='font-jetbrains w-26 h-12 bg-gray-950 text-white font-black hover:bg-gray-900 hover:scale-110 transition-all cursor-pointer'>CV</Button>
             </div>
         </section>
     )

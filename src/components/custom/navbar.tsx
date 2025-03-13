@@ -17,7 +17,7 @@ const handleScrollToProjects = (elementId:string) => {
 const Navbar = () => {
   const t = useTranslations();
   return (
-    <section className="z-10 fixed left-1/2  -translate-x-1/2 bg-[#252424] w-[95%] md:w-[75%] h-12 md:h-16 mt-2 rounded-xl grid grid-cols-[25%_25%_25%_6.25%_6.25%_6.25%_6.25] border border-gray-900 ">   
+    <section className="z-10 fixed left-1/2  -translate-x-1/2 bg-[#252424] w-[95%] md:w-[75%] h-12 md:h-16 mt-2 rounded-xl grid grid-cols-[25%_25%_25%_6.25%_6.25%_6.25%_6.25] border border-gray-900 font-inter">   
       <p className="m-auto font-bold text-sm md:text-base xl:text-xl cursor-pointer hover:scale-115 transition-all">{t('HomePage.title')}</p>
       <p onClick={() => handleScrollToProjects('projects')} className="m-auto font-bold text-sm md:text-base xl:text-xl cursor-pointer hover:scale-115 transition-all">Projects</p>
       <p className="m-auto font-bold text-sm md:text-base xl:text-xl cursor-pointer hover:scale-115 transition-all">Education</p>

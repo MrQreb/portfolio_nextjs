@@ -7,11 +7,15 @@
     "Projects": {
       "project1": {
         "title": "Hello Kitty Chat Bot",
-        "text": "I made a chatbot focused in acting like Hello Kitty. I consumed gemmini API to made it"
+        "text": "I develop a chatbot with Hello Kitty's personality using Gemini API. I used Next.js for interface & Tauri to convert it into a desktop app."
       },
       "project2": {
         "title": "PetSet",
         "text": "I made a chatbot focused in acting like Hello Kitty. I consumed gemmini API to made it"
       }
-    }
+    },
+    "Languages":{
+    "spanish":"Spanish",
+    "english":"English"
+  }
   }

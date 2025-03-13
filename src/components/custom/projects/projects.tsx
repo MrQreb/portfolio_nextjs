@@ -44,7 +44,7 @@ const Projects = () => {
 
   return (
     <section className="w-full mt-12 mb-24">
-      <h2 className="text-4xl md:text-5xl text-center font-bold">Projects</h2>
+      <h2 className="text-4xl md:text-5xl text-center font-bold font-inter">Projects</h2>
       { 
         projectsData.map ( (project,index) => (
           <ProjectContainer
