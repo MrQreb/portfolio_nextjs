@@ -2,5 +2,16 @@
     "HomePage": {
       "title": "Hola world!",
       "about": "Go to the about page"
+    },
+
+    "Projects": {
+      "project1": {
+        "title": "Hello Kitty Chat Bot",
+        "text": "I made a chatbot focused in acting like Hello Kitty. I consumed gemmini API to made it"
+      },
+      "project2": {
+        "title": "PetSet",
+        "text": "I made a chatbot focused in acting like Hello Kitty. I consumed gemmini API to made it"
+      }
     }
   }

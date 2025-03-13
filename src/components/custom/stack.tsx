@@ -7,7 +7,7 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
-import { stack } from '../../svgs/technologies'
+import { stack } from "@/helpers/stack"
 import { Link } from "@/i18n/navegation"
 
 const Stack = () => {

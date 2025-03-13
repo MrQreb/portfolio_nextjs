@@ -1,6 +1,19 @@
 {
-    "HomePage": {
-      "title": "Hello world!",
-      "about": "Go to the about page"
+  "HomePage": {
+    "title": "Hola world!",
+    "about": "Go to the about page"
+  },
+
+  "Projects": {
+    "project1": {
+      "title": "ChatBot de Hello Kitty",
+      "text": "Desarrollé un chatbot con la personalidad de Hello Kitty, utilizando la API de Gemini. Usando Nexjs para interfaces, Tauri para la conversión a aplicación de escritorio."
+    },
+    "project2": {
+      "title": "PetSet",
+      "image": "/pet_set.png",
+      "videoURL": "https://www.youtube.com/watch?v=jKQ-AYxxFO4",
+      "text": "I made a chatbot focused in acting like Hello Kitty. I consumed gemmini API to made it"
     }
   }
+}
