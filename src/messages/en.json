@@ -4,6 +4,13 @@
       "about": "Go to the about page"
     },
 
+    "navbar":{
+      "aboutMe":"About me",
+      "projects":"Projects",
+      "education":"Education"
+    },
+  
+
     "Projects": {
       "project1": {
         "title": "Hello Kitty Chat Bot",
@@ -11,9 +18,14 @@
       },
       "project2": {
         "title": "PetSet",
-        "text": "I made a chatbot focused in acting like Hello Kitty. I consumed gemmini API to made it"
+        "text": "Developing a multilanguage Saas for veterinary clinic management. It includes PDF generation, autorization  & permissions, emails sending and security with JWT"
       }
     },
+
+    "Experience":{
+      "years":"years"
+    },
+
     "Languages":{
     "spanish":"Spanish",
     "english":"English"

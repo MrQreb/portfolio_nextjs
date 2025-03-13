@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/carousel"
 import { stack } from "@/helpers/stack"
 import { Link } from "@/i18n/navegation"
+import ExperienceText from './experience-text';
 
 const Stack = () => {
     return (
@@ -25,6 +26,7 @@ const Stack = () => {
                                         <CardContent className="flex flex-col aspect-square items-center justify-center p-6 w-full h-full gap-6">
                                             <span className="text-4xl md:text-5xl text-center font-bold ">{item.name}</span>
                                             <Link href={item.documentation}><item.image className="size-16 md:size-24 hover:scale-110 transition-all" /></Link>
+                                            <ExperienceText years={item.years}/>
                                         </CardContent>
                                     </Card>
                                 </div>

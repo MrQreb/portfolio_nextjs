@@ -1,5 +1,5 @@
 'use client';
-import { Framer,  NestJS, Nextjs, PostgreSQL, TailwindCSS, Tauri, TypeORM } from '@/helpers/svgs';
+import { Framer,  JWT,  NestJS, Nextjs, PostgreSQL, Swagger, TailwindCSS, Tauri, TypeORM } from '@/helpers/svgs';
 import HoverVideo from '../hover-video';
 import ProjectContainer from './project-container';
 import { Docker } from '../../../helpers/svgs';
@@ -30,13 +30,28 @@ const Projects = () => {
     {
       title: 'PetSet',
       image: <HoverVideo imageURL="/pet_set.png" videoURL="https://www.youtube.com/watch?v=jKQ-AYxxFO4" />,
-      text: 'I made a chatbot focused in acting like Hello Kitty. I consumed gemmini API to made it',
+      text: t('project2.text'),      
       technologies:{
         Nextjs,
+        TailwindCSS,
         NestJS,
         PostgreSQL,
         Docker,
-        TypeORM
+        TypeORM,
+      }
+    },
+    {
+      title: 'API REST dentist',
+      image: <HoverVideo imageURL="/API_dentist.png" videoURL="https://www.youtube.com/watch?v=ZZcBcgC-n0Q" />,
+      hasRepository: true,
+      repositoryLink: 'https://github.com/MrQreb/api_arquitectura',
+      text: t('project2.text'),      
+      technologies:{
+        NestJS,
+        PostgreSQL,
+        Swagger,
+        Docker,
+        JWT
       }
     },
    
