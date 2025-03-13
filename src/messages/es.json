@@ -1,7 +1,8 @@
 {
-  "HomePage": {
-    "title": "Hola world!",
-    "about": "Go to the about page"
+
+  "aboutMe":{
+    "name":"Jesús Eduardo Arias Díaz Desarrollador web",
+    "aboutMe":"Estudiante de Ingenería en Sistemas Computacionales de ultimo semestre. Enfocado a la creación de soluciones eficientes y escables. Enfocado en mi actual stack, pero abierto a aprender nuevas tecnologias."
   },
 
   "navbar":{
@@ -11,6 +12,7 @@
   },
 
   "Projects": {
+    "title":"Proyectos",
     "project1": {
       "title": "ChatBot de Hello Kitty",
       "text": "Desarrollé un chatbot con la personalidad de Hello Kitty, utilizando la API de Gemini. Para la interfaz, empleé Next.js, y usé Tauri para la aplicación de escritorio."
@@ -20,11 +22,28 @@
       "image": "/pet_set.png",
       "videoURL": "https://www.youtube.com/watch?v=jKQ-AYxxFO4",
       "text": "Desarrollando un multi lenguaje SaaS para la gestión de clínicas veterinarias. Incluye generación automática de PDFs, gestión de roles y permisos, envío de correos y seguridad con JWT."
+    },
+    "project3": {
+      "title": "API REST dentista",
+      "text": "Desarrollé una API REST utilizando NestJS, TypeORM, PostgreSQL y Docker. Implementé optimizaciones con paginación y parametros en los endpoints, eliminación lógica, validación de datos y seguridad con JWT."
     }
   },
 
   "Experience":{
     "years":"años"
+  },
+
+  "Education":{
+    "title":"Educación",
+    "institution1":{
+      "degree":"Ingenería en Sistemas Computacionales",
+      "description": "Programa intensivo que cubre programación, bases de datos y algoritmos, estructura de datos, redes"
+    },
+    "institution2":{
+      "degree":"Técnico en programación",
+      "description": "Programa intensivo que abarca programación, bases de datos y principios básicos de ingeniería de software."
+    }
+
   },
 
 

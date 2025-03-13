@@ -41,13 +41,14 @@ const Projects = () => {
       }
     },
     {
-      title: 'API REST dentist',
+      title: t('project3.title'),
       image: <HoverVideo imageURL="/API_dentist.png" videoURL="https://www.youtube.com/watch?v=ZZcBcgC-n0Q" />,
       hasRepository: true,
       repositoryLink: 'https://github.com/MrQreb/api_arquitectura',
-      text: t('project2.text'),      
+      text: t('project3.text'),      
       technologies:{
         NestJS,
+        TypeORM,
         PostgreSQL,
         Swagger,
         Docker,
@@ -58,8 +59,8 @@ const Projects = () => {
   ];
 
   return (
-    <section className="w-full mt-12 mb-24">
-      <h2 className="text-4xl md:text-5xl text-center font-bold font-inter">Projects</h2>
+    <section className="w-full mt-12 mb-24" id='projects'>
+      <h2 className="text-4xl md:text-5xl text-center font-bold font-inter">{t('title')}</h2>
       { 
         projectsData.map ( (project,index) => (
           <ProjectContainer

@@ -1,4 +1,5 @@
 import About from "@/components/custom/about";
+import Education from "@/components/custom/education";
 import Navbar from "@/components/custom/navbar";
 import Projects from "@/components/custom/projects/projects";
 import Stack from "@/components/custom/stack";
@@ -9,9 +10,8 @@ export default function Home() {
       <Navbar/>
       <About/>
       <Stack/>
-      <div id="projects">
-        <Projects/>
-      </div>
+      <Projects/>
+      <Education></Education>
     </main>
   );
 }

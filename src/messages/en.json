@@ -1,33 +1,54 @@
 {
-    "HomePage": {
-      "title": "Hola world!",
-      "about": "Go to the about page"
-    },
 
-    "navbar":{
-      "aboutMe":"About me",
-      "projects":"Projects",
-      "education":"Education"
+
+  "aboutMe": {
+    "name": "Jesús Eduardo Arias Díaz Web Developer",
+    "aboutMe": "Final semester Computer Systems Engineering student. Focused on creating efficient and scalable solutions. Concentrated on my current stack but open to learning new technologies."
+  },
+
+  "navbar": {
+    "aboutMe": "About me",
+    "projects": "Projects",
+    "education": "Education"
+  },
+
+  "Projects": {
+    "title":"Projects",
+    "project1": {
+      "title": "Hello Kitty Chat Bot",
+      "text": "I develop a chatbot with Hello Kitty's personality using Gemini API. I used Next.js for interface & Tauri to convert it into a desktop app."
     },
+    "project2": {
+      "title": "PetSet",
+      "text": "Developing a multilanguage Saas for veterinary clinic management. It includes PDF generation, autorization  & permissions, emails sending and security with JWT."
+    },
+    "project3": {
+      "title": "API REST dentist",
+      "text": "I developed a REST API using NestJS, TypeORM, PostgreSQL, and Docker. Using optimizations with query parameters for searching in endpoints, soft deletes, data validation, and security with JWT."
+    }
+  },
+
+  "Experience": {
+    "years": "years"
+  },
   
-
-    "Projects": {
-      "project1": {
-        "title": "Hello Kitty Chat Bot",
-        "text": "I develop a chatbot with Hello Kitty's personality using Gemini API. I used Next.js for interface & Tauri to convert it into a desktop app."
-      },
-      "project2": {
-        "title": "PetSet",
-        "text": "Developing a multilanguage Saas for veterinary clinic management. It includes PDF generation, autorization  & permissions, emails sending and security with JWT"
-      }
+  
+  "Education":{
+    "title":"Educación",
+    "institution1":{
+      "degree": "Computer Science Degree",
+      "description": "Focused on web development, algorithms, data structures, software engineering, and computer networks."
     },
+    "institution2":{
+      "degree": "High School with a specialization in Programming",
+      "description": "Intensive program covering programmaing, databases, and basic software engineering principles."
+    }
 
-    "Experience":{
-      "years":"years"
-    },
+  },
 
-    "Languages":{
-    "spanish":"Spanish",
-    "english":"English"
+
+  "Languages": {
+    "spanish": "Spanish",
+    "english": "English"
   }
-  }
+}
